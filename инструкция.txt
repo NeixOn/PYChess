@@ -1,0 +1,35 @@
+Windows:
+pip3 install chess
+pip3 install pygame
+(Проверить наличие библиотеки tkinter, она должна была устанавливаться вместе с python, если её нету, то переустановите python)
+
+
+Linux:(Для всех)
+pip3 install chess
+pip3 install pygame
+Зайдите на оффициальный сайт stockfish: https://stockfishchess.org/download/linux/
+Проверьте микроархитектуру вашего процессора и подберите нужный движок либо BMI2, либо AVX2, либо POPCNT
+Зайдите в файл copy_main.py и в строке 10 замените путь на нужный вам(все файлы с движками лежат в папках BMI2, AVX2, POPCNT)
+
+For Debian-based Linux:
+sudo apt-get install python-tk
+
+For Arch-based Linux:
+sudo pacman -S tk
+
+For Fedora-based Linux:
+sudo dnf install python3-tkinter
+
+For RHEL, CentOS, Oracle Linux:
+sudo yum install -y tkinter tk-devel
+
+
+
+
+ЗАПУСК ПРОГРАММЫ:
+После установки необходимых пакетов, введите следующую команду:
+Linux:
+python3 copy_main.py
+
+Windows:
+python copy_main.py

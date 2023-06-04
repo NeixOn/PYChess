@@ -1,0 +1,50 @@
+'''Рисует квадраты на доске(верхний левый квадрат всегда белый)'''
+def drawBoard(screen, choice_figure, posX, posY, board, game_state, figure, figure_maybe_move):
+    '''colors = [p.Color("#b18a66"), p.Color("#eedab8")]#
+    for i in range(DIMENSION):
+        for j in range(DIMENSION):
+            color = colors[(i+j) % 2]
+            if(j == posX - 1 and i == posY - 1 and choice_figure == 1):
+                color = "#859666a8"
+            p.draw.rect(screen, color, p.Rect(j * SQ_SIZE, (8-i-1) * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+            """if(choice_figure == 1):
+                if (game_state.law[(j+1)*10 + i+1] in figure_maybe_move):
+                    if((i+j) % 2 == 0):
+                        screen.blit(image_for_white, p.Rect(j * SQ_SIZE, (8-i-1) * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+                    else:
+                       screen.blit(image_for_black, p.Rect(j * SQ_SIZE, (8-i-1) * SQ_SIZE, SQ_SIZE, SQ_SIZE))"""
+    i = 8
+    for j in range(9):
+        p.draw.rect(screen, "#c37742", p.Rect(j * SQ_SIZE, i * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    i = 9
+    for j in range(9):
+        p.draw.rect(screen, "#c37742", p.Rect(j * SQ_SIZE, i * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    j = 8
+    for i in range(8):
+        p.draw.rect(screen, "#c37742", p.Rect(j * SQ_SIZE, i * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    j = 9
+    for i in range(9):
+        p.draw.rect(screen, "#c37742", p.Rect(j * SQ_SIZE, i * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+
+
+    p.draw.rect(screen, "black", p.Rect(512, 0, 4, 516))
+    p.draw.rect(screen, "black", p.Rect(0, 512, 516, 4))
+    p.draw.rect(screen, "black", p.Rect(0, 516, 4, 128))
+    p.draw.rect(screen, "black", p.Rect(0, 636, 640, 4))
+    p.draw.rect(screen, "black", p.Rect(636, 0, 4, 640))'''
+    pass
+
+
+
+
+
+''' Отрисовка элементов программы, по названиям понятно'''
+    '''screen.blit(image_arrow, p.Rect(2*SQ_SIZE, 8*SQ_SIZE+32, SQ_SIZE, SQ_SIZE))
+    screen.blit(image_open, p.Rect(8 * SQ_SIZE, 0 * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    screen.blit(image_output, p.Rect(8 * SQ_SIZE, 8 * SQ_SIZE, SQ_SIZE*2, SQ_SIZE*2))
+    screen.blit(image_position, p.Rect(8 * SQ_SIZE, 7 * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    screen.blit(image_usually, p.Rect(8 * SQ_SIZE, 6 * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    screen.blit(image_computer, p.Rect(8 * SQ_SIZE, 5 * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    screen.blit(image_save_files, p.Rect(8 * SQ_SIZE, 1 * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+    screen.blit(textSurfaceObj, textRectObj)''' - Возможно это оценка
+    
